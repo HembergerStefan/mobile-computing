@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3E28802C2733FA4C0009E091 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E28802B2733FA4C0009E091 /* Model.swift */; };
+		3EBF9067273EEAFA0003CF93 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF9066273EEAFA0003CF93 /* ResultViewController.swift */; };
 		3EFB885727183944001A0C52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFB885627183944001A0C52 /* AppDelegate.swift */; };
 		3EFB885927183944001A0C52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFB885827183944001A0C52 /* SceneDelegate.swift */; };
-		3EFB885B27183944001A0C52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFB885A27183944001A0C52 /* ViewController.swift */; };
+		3EFB885B27183944001A0C52 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFB885A27183944001A0C52 /* GameController.swift */; };
 		3EFB885E27183944001A0C52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EFB885C27183944001A0C52 /* Main.storyboard */; };
 		3EFB886027183945001A0C52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EFB885F27183945001A0C52 /* Assets.xcassets */; };
 		3EFB886327183945001A0C52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EFB886127183945001A0C52 /* LaunchScreen.storyboard */; };
@@ -38,10 +39,11 @@
 
 /* Begin PBXFileReference section */
 		3E28802B2733FA4C0009E091 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		3EBF9066273EEAFA0003CF93 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		3EFB885327183944001A0C52 /* NumberGuesser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumberGuesser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EFB885627183944001A0C52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EFB885827183944001A0C52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3EFB885A27183944001A0C52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3EFB885A27183944001A0C52 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		3EFB885D27183944001A0C52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3EFB885F27183945001A0C52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EFB886227183945001A0C52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -104,9 +106,10 @@
 			children = (
 				3EFB885627183944001A0C52 /* AppDelegate.swift */,
 				3EFB885827183944001A0C52 /* SceneDelegate.swift */,
-				3EFB885A27183944001A0C52 /* ViewController.swift */,
+				3EFB885A27183944001A0C52 /* GameController.swift */,
 				3EFB885C27183944001A0C52 /* Main.storyboard */,
 				3EFB885F27183945001A0C52 /* Assets.xcassets */,
+				3EBF9066273EEAFA0003CF93 /* ResultViewController.swift */,
 				3EFB886127183945001A0C52 /* LaunchScreen.storyboard */,
 				3EFB886427183945001A0C52 /* Info.plist */,
 			);
@@ -261,7 +264,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EFB885B27183944001A0C52 /* ViewController.swift in Sources */,
+				3EBF9067273EEAFA0003CF93 /* ResultViewController.swift in Sources */,
+				3EFB885B27183944001A0C52 /* GameController.swift in Sources */,
 				3EFB885727183944001A0C52 /* AppDelegate.swift in Sources */,
 				3EFB885927183944001A0C52 /* SceneDelegate.swift in Sources */,
 				3E28802C2733FA4C0009E091 /* Model.swift in Sources */,
