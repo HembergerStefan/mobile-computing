@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,21 +16,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H33-l7-7g1">
-                                <rect key="frame" x="191" y="431" width="32" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <rect key="frame" x="190.5" y="431" width="33" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
                                     <action selector="onEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="HDs-g8-rQr"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Schätzen Sie die Zahl!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HtP-eX-GXC">
-                                <rect key="frame" x="122.5" y="374" width="169" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fot-M0-HeM">
-                                <rect key="frame" x="174.5" y="509" width="65" height="31"/>
+                                <rect key="frame" x="132" y="550" width="150" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="naF-zk-xNV"/>
+                                    <constraint firstAttribute="height" constant="55" id="o0J-hv-dgv"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Check"/>
                                 <connections>
@@ -39,20 +36,35 @@
                                     <segue destination="P3d-0z-HNe" kind="show" id="q50-EZ-Rc5"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Schätzen Sie die Zahl!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HtP-eX-GXC">
+                                <rect key="frame" x="102" y="297" width="211" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1. Versuch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AB8-d4-rtm">
+                                <rect key="frame" x="166" y="346" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.93244916200637817" blue="0.72034311294555664" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="H33-l7-7g1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1pv-wP-oEn"/>
-                            <constraint firstItem="HtP-eX-GXC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4xC-Hp-wEl"/>
-                            <constraint firstItem="H33-l7-7g1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Br0-IJ-yzG"/>
-                            <constraint firstItem="fot-M0-HeM" firstAttribute="top" secondItem="H33-l7-7g1" secondAttribute="bottom" constant="44" id="Ruq-Aw-bOX"/>
-                            <constraint firstItem="H33-l7-7g1" firstAttribute="top" secondItem="HtP-eX-GXC" secondAttribute="bottom" constant="36" id="o3F-Eh-xFb"/>
-                            <constraint firstItem="fot-M0-HeM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yAC-Vk-blk"/>
+                            <constraint firstItem="H33-l7-7g1" firstAttribute="top" secondItem="HtP-eX-GXC" secondAttribute="bottom" constant="152.5" id="3bq-ea-XBp"/>
+                            <constraint firstItem="fot-M0-HeM" firstAttribute="top" secondItem="H33-l7-7g1" secondAttribute="bottom" constant="85" id="Aa8-Rk-OsE"/>
+                            <constraint firstItem="AB8-d4-rtm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Us9-yd-Frs"/>
+                            <constraint firstItem="H33-l7-7g1" firstAttribute="top" secondItem="AB8-d4-rtm" secondAttribute="bottom" constant="109" id="aig-pH-GWm"/>
+                            <constraint firstItem="H33-l7-7g1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cqQ-Ug-lql"/>
+                            <constraint firstItem="H33-l7-7g1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="csB-x2-aAf"/>
+                            <constraint firstItem="fot-M0-HeM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dYe-a3-2qs"/>
+                            <constraint firstItem="HtP-eX-GXC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rgU-jj-yRa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Game" id="qer-H0-RgQ"/>
                     <connections>
+                        <outlet property="attemptsLable" destination="AB8-d4-rtm" id="jAE-GD-CMz"/>
                         <outlet property="button" destination="fot-M0-HeM" id="QwY-vJ-V8P"/>
                         <outlet property="inputField" destination="H33-l7-7g1" id="OI0-gF-AdP"/>
                         <outlet property="textView" destination="HtP-eX-GXC" id="sP8-xM-hmw"/>
@@ -60,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="190" y="100"/>
+            <point key="canvasLocation" x="189.85507246376812" y="99.776785714285708"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="yub-6G-72J">
@@ -70,29 +82,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T85-tW-Cg3">
-                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chq-Sx-cny">
+                                <rect key="frame" x="169" y="436.5" width="76.5" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T85-tW-Cg3">
+                                <rect key="frame" x="107" y="140" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="PiK-53-NhM"/>
                                     <constraint firstAttribute="width" constant="200" id="bBK-JS-1BI"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="866-LN-roL">
+                                <rect key="frame" x="102" y="539" width="210" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="6mX-eq-M4U"/>
+                                    <constraint firstAttribute="height" constant="65" id="Rph-AK-j3w"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Nochmal Spielen"/>
+                                <connections>
+                                    <action selector="onAgainButtonClick:" destination="P3d-0z-HNe" eventType="touchUpInside" id="NAV-8a-tJG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="h9W-cd-jI7"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.86821526288986206" green="0.94231462478637695" blue="0.80226796865463257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="T85-tW-Cg3" firstAttribute="centerY" secondItem="CWA-4z-SfO" secondAttribute="centerY" id="CVa-tF-XeO"/>
-                            <constraint firstItem="T85-tW-Cg3" firstAttribute="centerX" secondItem="CWA-4z-SfO" secondAttribute="centerX" id="Rie-4Q-BWL"/>
+                            <constraint firstItem="866-LN-roL" firstAttribute="centerX" secondItem="CWA-4z-SfO" secondAttribute="centerX" id="IDF-WT-IE4"/>
+                            <constraint firstItem="Chq-Sx-cny" firstAttribute="centerX" secondItem="CWA-4z-SfO" secondAttribute="centerX" id="WZX-1A-UGF"/>
+                            <constraint firstItem="866-LN-roL" firstAttribute="top" secondItem="Chq-Sx-cny" secondAttribute="bottom" constant="79.5" id="WoN-iB-MB6"/>
+                            <constraint firstItem="Chq-Sx-cny" firstAttribute="centerY" secondItem="CWA-4z-SfO" secondAttribute="centerY" id="uXM-hw-aFc"/>
+                            <constraint firstItem="Chq-Sx-cny" firstAttribute="top" secondItem="T85-tW-Cg3" secondAttribute="bottom" constant="39.5" id="voj-4t-F4e"/>
+                            <constraint firstItem="T85-tW-Cg3" firstAttribute="centerX" secondItem="CWA-4z-SfO" secondAttribute="centerX" id="w0d-Q1-4kZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MYQ-VF-N5G"/>
                     <connections>
                         <outlet property="imageView" destination="T85-tW-Cg3" id="YHT-y6-VEE"/>
+                        <outlet property="msgLable" destination="Chq-Sx-cny" id="oWj-hy-aVD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xPa-Ee-o1C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1204" y="100"/>
+            <point key="canvasLocation" x="1202.8985507246377" y="99.776785714285708"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Jmr-sB-txD">
@@ -111,9 +146,4 @@
             <point key="canvasLocation" x="-714" y="100"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

@@ -2,22 +2,27 @@ import UIKit
 
 class GameController: UIViewController {
     
-    static weak var viewController: GameController!
+    static weak var instance: GameController!
     
-    @IBOutlet weak var inputField: UITextField!
     @IBOutlet weak var textView: UILabel!
     
+    @IBOutlet weak var attemptsLable: UILabel!
+    @IBOutlet weak var inputField: UITextField!
     @IBOutlet weak var button: UIButton!
-    // let target: Int = Int.random(in: 0...100)
+
     var model = Model()
     
     override func viewDidLoad() {
-        GameController.viewController = self
+        GameController.instance = self
         super.viewDidLoad()
-        self.model.newGame()
-        print("Target number = \(self.model.target)")
+        self.initView()
     }
     
+    func initView() {
+        self.model.newGame()
+        print("Target number = \(self.model.target)")
+        self.inputField.becomeFirstResponder()
+    }
     
     @IBAction func onEditingChanged(_ sender: Any) {
         
@@ -33,8 +38,9 @@ class GameController: UIViewController {
     
     @IBAction func onCheckButtonClicked(_ sender: Any) {
         
-        // increase attempts counter
+        // update attempts
         self.model.attempts += 1
+        self.attemptsLable.text = "\(self.model.attempts + 1). Versuch"
         
         // change hint text
         if let guess = Int(self.inputField.text!) {

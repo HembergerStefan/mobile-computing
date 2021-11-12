@@ -7,7 +7,7 @@ class Model {
     
     func newGame() {
         self.target = Int.random(in: 0...100)
-        self.attempts = 10
+        self.attempts = 0
     }
     
     func isCorrect(guess: Int!) -> Bool {

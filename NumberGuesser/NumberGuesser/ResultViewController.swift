@@ -1,25 +1,27 @@
-//
-//  ResultViewController.swift
-//  NumberGuesser
-//
-//  Created by Stefan Hemberger on 12.11.21.
-//
-
 import UIKit
 
 class ResultViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
-    
+    @IBOutlet weak var msgLable: UILabel!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setImage()
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        self.initView()
     }
 
+    func initView() {
+        self.setImage()
+        let attempts = GameController.instance.model.attempts
+        self.msgLable.text = "Du hast \(attempts) \((attempts == 1) ? "Versuch" : "Versuche") benötigt!"
+    }
+    
     func setImage() {
        
-        let ctr = GameController.viewController.model.attempts
+        let ctr = GameController.instance.model.attempts
         
+        // set different images
         if ctr < 6 {
             self.imageView.image = UIImage(named: "goodResult")
         } else if ctr < 8 {
@@ -30,4 +32,10 @@ class ResultViewController: UIViewController {
         
     }
     
+    @IBAction func onAgainButtonClick(_ sender: Any) {
+        
+        _ = navigationController?.popViewController(animated: true)
+        GameController.instance.loadView()  // reload the views
+        GameController.instance.initView()
+    }
 }
