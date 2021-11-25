@@ -18,6 +18,7 @@
 		3EFB886E27183945001A0C52 /* NumberGuesserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFB886D27183945001A0C52 /* NumberGuesserTests.swift */; };
 		3EFB887827183945001A0C52 /* NumberGuesserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFB887727183945001A0C52 /* NumberGuesserUITests.swift */; };
 		3EFB887A27183945001A0C52 /* NumberGuesserUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFB887927183945001A0C52 /* NumberGuesserUITestsLaunchTests.swift */; };
+		87233D23274FAF7400E3C120 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87233D22274FAF7400E3C120 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		3EFB887327183945001A0C52 /* NumberGuesserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NumberGuesserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EFB887727183945001A0C52 /* NumberGuesserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberGuesserUITests.swift; sourceTree = "<group>"; };
 		3EFB887927183945001A0C52 /* NumberGuesserUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberGuesserUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		87233D22274FAF7400E3C120 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				3EFB885827183944001A0C52 /* SceneDelegate.swift */,
 				3EFB885A27183944001A0C52 /* GameController.swift */,
 				3EFB885C27183944001A0C52 /* Main.storyboard */,
+				87233D22274FAF7400E3C120 /* TableViewController.swift */,
 				3EFB885F27183945001A0C52 /* Assets.xcassets */,
 				3EBF9066273EEAFA0003CF93 /* ResultViewController.swift */,
 				3EFB886127183945001A0C52 /* LaunchScreen.storyboard */,
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EBF9067273EEAFA0003CF93 /* ResultViewController.swift in Sources */,
+				87233D23274FAF7400E3C120 /* TableViewController.swift in Sources */,
 				3EFB885B27183944001A0C52 /* GameController.swift in Sources */,
 				3EFB885727183944001A0C52 /* AppDelegate.swift in Sources */,
 				3EFB885927183944001A0C52 /* SceneDelegate.swift in Sources */,
