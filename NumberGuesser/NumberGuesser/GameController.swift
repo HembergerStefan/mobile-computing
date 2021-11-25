@@ -45,6 +45,7 @@ class GameController: UIViewController {
         
         // change hint text
         if let guess = Int(self.inputField.text!) {
+            model.guesses.append(guess)
             let diff = self.model.compare(guess: guess)
             textView.text = "Die Zahl ist \((diff > 0) ? "größer": (diff < 0) ? "kleiner" : "richtig")!"
         }

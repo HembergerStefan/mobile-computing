@@ -4,6 +4,7 @@ class Model {
     
     public var target = 0
     public var attempts = 0
+    var guesses = [Int]()
     
     func newGame() {
         self.target = Int.random(in: 0...100)
@@ -17,5 +18,6 @@ class Model {
     func compare (guess: Int!) -> Int {
         return self.target - guess
     }
+    
     
 }
