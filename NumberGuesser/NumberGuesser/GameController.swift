@@ -1,5 +1,5 @@
 import UIKit
-
+/*Comment*/
 class GameController: UIViewController {
     
     static weak var instance: GameController!
