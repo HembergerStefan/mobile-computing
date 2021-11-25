@@ -39,4 +39,12 @@ class ResultViewController: UIViewController {
        // GameController.instance.loadView()  // reload the views
        // GameController.instance.initView()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let resultViewController = segue.destination as? TableViewController
+        //as? -- Typecast
+        if let vc = resultViewController {
+            vc.model = model
+        }
+    }
 }
