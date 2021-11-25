@@ -1,8 +1,9 @@
 import UIKit
-
+/*Comment*/
+/***/
 class GameController: UIViewController {
     
-    static weak var instance: GameController!
+    
     
     @IBOutlet weak var textView: UILabel!
     
@@ -13,7 +14,7 @@ class GameController: UIViewController {
     var model = Model()
     
     override func viewDidLoad() {
-        GameController.instance = self
+       // GameController.instance = self
         super.viewDidLoad()
         self.initView()
     }
@@ -56,5 +57,16 @@ class GameController: UIViewController {
         }
         return false
     }
+   
+
+   
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let resultViewController = segue.destination as? ResultViewController
+        //as? -- Typecast
+        if let vc = resultViewController {
+            vc.model = model
+        }
+    }
+    
     
 }

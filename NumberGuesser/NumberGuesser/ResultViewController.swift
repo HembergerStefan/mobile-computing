@@ -4,6 +4,7 @@ class ResultViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var msgLable: UILabel!
+    var model:Model!
    
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -13,13 +14,13 @@ class ResultViewController: UIViewController {
 
     func initView() {
         self.setImage()
-        let attempts = GameController.instance.model.attempts
+        let attempts = model.attempts
         self.msgLable.text = "Du hast \(attempts) \((attempts == 1) ? "Versuch" : "Versuche") benötigt!"
     }
     
     func setImage() {
        
-        let ctr = GameController.instance.model.attempts
+        let ctr = model.attempts
         
         // set different images
         if ctr < 6 {
@@ -35,7 +36,7 @@ class ResultViewController: UIViewController {
     @IBAction func onAgainButtonClick(_ sender: Any) {
         
         _ = navigationController?.popViewController(animated: true)
-        GameController.instance.loadView()  // reload the views
-        GameController.instance.initView()
+       // GameController.instance.loadView()  // reload the views
+       // GameController.instance.initView()
     }
 }
